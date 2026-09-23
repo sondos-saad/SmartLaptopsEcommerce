@@ -44,9 +44,9 @@ function BtmHeader() {
                     </div>
 
                             {toggleNavList && (
-                                    <div className="category_nav_list flex flex-col gap-2 w-[220px] h-[500px] overflow-y-scroll absolute top-12 bg-gray-100 pt-2  ">
+                                    <div className="category_nav_list flex flex-col gap-2 w-55 h-125 overflow-y-scroll absolute top-12 bg-gray-100 pt-2  ">
                                     {categories.map((category)=>(
-                                        <Link to={category.slug} key={category.slug} className="border-b-1 border-gray-300 pb-2 pl-3 cursor-pointer hover:bg-gray-200">{category.name}</Link>
+                                        <Link to={category.slug} key={category.slug} className="border-b border-gray-300 pb-2 pl-3 cursor-pointer hover:bg-gray-200">{category.name}</Link>
                                     ))}
                                 </div>
                             )}
@@ -63,7 +63,7 @@ function BtmHeader() {
                     </div>
                 </div>
             </nav>
-            <div className="sign_regs_icon flex justify-between items-center gap-2">
+            <div className=" flex justify-between items-center gap-2">
                 <Link to="/"><GoSignIn className="md:text-xl text-white"/></Link>
                 <Link to="/"><FaUserPlus className="md:text-xl text-white"/></Link>
             </div>
